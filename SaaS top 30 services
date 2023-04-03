@@ -1,0 +1,35 @@
+SaaS
+================
+
+Software as a Service (SaaS) is a cloud computing model that provides software applications to users over the internet. Here are some of the AWS resources that come under SaaS:
+
+Amazon WorkDocs - a fully managed document collaboration and storage service
+Amazon Chime - a fully managed video conferencing and collaboration service
+Amazon WorkMail - a fully managed email and calendar service
+Amazon Connect - a cloud-based contact center service
+Amazon AppStream - a fully managed application streaming service
+Amazon WorkSpaces - a fully managed desktop-as-a-service (DaaS) solution
+Amazon Honeycode - a fully managed no-code application builder
+Amazon Kendra - a fully managed enterprise search service
+Amazon QuickSight - a fully managed business intelligence service
+AWS Managed Services - a fully managed service that provides ongoing management of infrastructure and applications on AWS
+Amazon GuardDuty - a fully managed threat detection service
+Amazon Macie - a fully managed data security and privacy service
+AWS Shield - a fully managed DDoS protection service
+AWS WAF - a fully managed web application firewall service
+AWS Firewall Manager - a fully managed central security management service
+Amazon Inspector - a fully managed security assessment service
+AWS Certificate Manager - a fully managed service that provides SSL/TLS certificates for your websites and applications
+AWS Organizations - a fully managed service that enables you to manage multiple AWS accounts
+AWS Single Sign-On - a fully managed service that enables single sign-on for AWS and other applications
+AWS Secrets Manager - a fully managed service that enables you to store and manage secrets such as database credentials, API keys, and other sensitive information
+AWS Key Management Service - a fully managed service that enables you to create and manage encryption keys for your applications and services
+AWS IoT Device Management - a fully managed service that enables you to manage IoT devices at scale
+Amazon Cloud Directory - a fully managed service that enables you to create directories for your applications
+Amazon Cognito - a fully managed service that enables you to add user sign-up, sign-in, and access control to your applications
+Amazon AppSync - a fully managed service that enables you to build real-time, offline-capable GraphQL APIs
+AWS AppMesh - a fully managed service that enables you to monitor and control microservices running on AWS
+Amazon API Gateway - a fully managed service that enables you to create, publish, and manage APIs
+Amazon Pinpoint - a fully managed service that enables you to engage with your customers across multiple channels
+Amazon SES - a fully managed email service that enables you to send and receive emails from your applications
+Amazon SNS - a fully managed pub/sub messaging service that enables you to send messages between distributed systems.

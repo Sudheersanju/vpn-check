@@ -1,0 +1,36 @@
+IAAS 
+===============
+
+Infrastructure as a Service (IaaS) is a cloud computing model that provides virtualized computing resources over the internet. Here are some of the most frequently high demand used AWS resources that come under IaaS:
+
+Amazon Elastic Compute Cloud (EC2) - a highly scalable virtual machine instance service
+Amazon Elastic Block Store (EBS) - a persistent block storage service for EC2 instances
+Amazon Simple Storage Service (S3) - a highly scalable object storage service
+Amazon Virtual Private Cloud (VPC) - a logically isolated virtual network service
+Amazon Route 53 - a highly available and scalable domain name system (DNS) service
+Amazon Elastic Load Balancing (ELB) - a highly available and scalable load balancing service
+Amazon Relational Database Service (RDS) - a managed database service that supports multiple database engines
+Amazon DynamoDB - a fully managed NoSQL database service
+Amazon Redshift - a fully managed data warehouse service
+Amazon ElastiCache - a fully managed in-memory data store service
+Amazon CloudFront - a global content delivery network (CDN) service
+Amazon Glacier - a low-cost, long-term data archive service
+Amazon Simple Queue Service (SQS) - a fully managed message queue service
+Amazon Simple Notification Service (SNS) - a fully managed pub/sub messaging service
+Amazon Simple Email Service (SES) - a fully managed email service for sending transactional emails
+Amazon Simple Workflow Service (SWF) - a fully managed workflow service
+AWS Elastic Beanstalk - a fully managed platform-as-a-service (PaaS) for deploying web applications
+AWS CloudFormation - a fully managed infrastructure-as-code service
+AWS CloudTrail - a fully managed service that enables governance, compliance, and operational auditing of AWS accounts
+AWS Identity and Access Management (IAM) - a fully managed service that enables you to manage access to AWS resources
+AWS Key Management Service (KMS) - a fully managed service that enables you to create and manage encryption keys for your applications and services
+AWS Directory Service - a fully managed service that enables you to run Microsoft Active Directory (AD) in the AWS Cloud
+AWS Storage Gateway - a hybrid cloud storage service that enables you to connect on-premises applications to AWS storage services
+AWS Batch - a fully managed service that enables you to run batch computing workloads on AWS
+Amazon Elastic Kubernetes Service (EKS) - a fully managed Kubernetes service
+AWS Fargate - a fully managed container orchestration service
+AWS Lambda - a serverless compute service that enables you to run code in response to events
+Amazon API Gateway - a fully managed service that enables you to create, publish, and manage APIs
+AWS Glue - a fully managed extract, transform, and load (ETL) service
+Amazon Kinesis - a fully managed service that enables you to process and analyze streaming data
+

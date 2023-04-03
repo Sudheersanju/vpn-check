@@ -1,0 +1,162 @@
+AKIATANGK5LOTYFXVIXG
+
+
+oovSr2snFgAN9hzgfPl680z9Af63mnziSRNZMcNy
+
+
+
+
+provider "aws" {
+  access_key = "AKIATANGK5LOTYFXVIXG"
+  secret_key = "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"
+  region     = "us-west-1"
+}
+
+resource "aws_eks_cluster" "my_cluster" {
+  name     = "my-cluster"
+  role_arn = aws_iam_role.eks_cluster.arn
+
+  vpc_config {
+
+    subnet_ids = ["subnet-06d98f87e140a0af0","subnet-0f0e9649cae5af746"]
+
+  }   enabled_cluster_log_types = [
+
+    "api",
+
+    "audit",
+
+    "authenticator",
+
+    "controllerManager",
+   "scheduler",
+
+  ]
+
+}
+}
+  version = "1.22"
+
+  depends_on = [
+    aws_iam_role_policy_attachment.eks_cluster,
+  ]
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+}
+
+resource "aws_iam_role" "eks_cluster" {
+  name = "eks-cluster"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "eks.amazonaws.com"
+        }
+      }
+    ]
+  })
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+}
+
+resource "aws_iam_role_policy_attachment" "eks_cluster" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+  role       = aws_iam_role.eks_cluster.name
+}
+
+resource "aws_eks_node_group" "my_node_group" {
+cluster_name    = aws_eks_cluster.my_cluster.name
+  node_group_name = "my-node-group"
+
+  scaling_config {
+    min_size = 1
+    max_size = 3
+  }
+
+  instance_types = ["n1-standard-1"]
+  ami_type       = "AL2_x86_64"
+  disk_size      = 20
+
+  labels = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+
+  remote_access {
+ec2_ssh_key = "my-key"
+    source_security_group_id = sg-05702b35637469c8b
+  }
+
+  taint {
+    effect = "NO_SCHEDULE"
+    key    = "dedicated"
+    value  = "my-node-group"
+  }
+
+  depends_on = [
+    aws_iam_role_policy_attachment.eks_worker,
+  ]
+}
+
+resource "aws_iam_role" "eks_worker" {
+  name = "eks-worker"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+Effect = "Allow"
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      }
+    ]
+  })
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+}
+
+resource "aws_iam_role_policy_attachment" "eks_worker" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
+  role       = aws_iam_role.eks_worker.name
+}
+
+resource "aws_security_group" "eks_cluster_sg" {
+  name_prefix = "eks-cluster-sg-"
+  vpc_id      = module.eks.vpc-0dc9c088a2ce26523
+  ingress {
+  from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+}
+  

@@ -1,0 +1,32 @@
+Platform as a Service (PaaS) is a cloud computing model that provides a platform for developers to build, test, and deploy applications. Here are some of the most frequently high demand AWS resources that come under PaaS:
+
+AWS Elastic Beanstalk - a fully managed service that makes it easy to deploy and run web applications
+AWS Lambda - a serverless computing service that enables developers to run code without provisioning or managing servers
+Amazon API Gateway - a fully managed service that makes it easy for developers to create, publish, and manage APIs
+Amazon DynamoDB - a fully managed NoSQL database service that provides low-latency, scalable database solutions
+Amazon RDS - a fully managed relational database service that makes it easy to set up, operate, and scale databases
+Amazon ElastiCache - a fully managed in-memory data store service that provides sub-millisecond latency for data-intensive applications
+Amazon CloudFront - a content delivery network (CDN) service that speeds up the delivery of static and dynamic web content
+AWS CodePipeline - a fully managed continuous integration and delivery (CI/CD) service that automates the software release process
+AWS CodeCommit - a fully managed source control service that enables secure and scalable source code management
+AWS CodeBuild - a fully managed build service that compiles source code, runs tests, and produces software packages
+AWS CodeDeploy - a fully managed deployment service that automates software deployments to a variety of compute services
+AWS CodeStar - a fully integrated development environment (IDE) that makes it easy to develop, build, and deploy applications on AWS
+AWS Amplify - a fully managed service that enables developers to build scalable and secure web and mobile applications
+AWS AppSync - a fully managed service that enables developers to build real-time, offline-capable GraphQL APIs
+AWS Step Functions - a fully managed service that enables developers to build scalable and resilient workflows for their applications
+Amazon Pinpoint - a fully managed service that enables developers to engage with their customers across multiple channels
+Amazon SES - a fully managed email service that enables developers to send and receive emails from their applications
+Amazon SNS - a fully managed pub/sub messaging service that enables developers to send messages between distributed systems
+Amazon SQS - a fully managed message queue service that enables developers to decouple and scale distributed systems
+Amazon EventBridge - a fully managed event bus service that enables developers to build event-driven architectures
+AWS Glue - a fully managed extract, transform, and load (ETL) service that makes it easy to move data between different data stores
+AWS SageMaker - a fully managed service that enables developers to build, train, and deploy machine learning models
+AWS IoT Core - a fully managed service that enables developers to connect and manage IoT devices at scale
+AWS IoT Analytics - a fully managed service that enables developers to analyze IoT data at scale
+AWS App Runner - a fully managed service that enables developers to quickly and easily deploy containerized applications
+AWS App Mesh - a fully managed service that enables developers to monitor and control microservices running on AWS
+Amazon Lex - a fully managed service that enables developers to build conversational interfaces
+Amazon Polly - a fully managed service that enables developers to generate natural-sounding speech from text
+Amazon Rekognition - a fully managed service that enables developers to add image and video analysis to their applications
+Amazon Transcribe - a fully managed service that enables developers to convert speech to text
